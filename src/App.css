@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap');
+
+*,*::after,*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --text-color:rgb(28, 32, 34);
+}
+body{
+    font-family: 'Barlow', sans-serif;
+    color: var(--text-color);
+    font-size: 1rem;
+}
+.containers{
+    max-width: 1300px;
+    padding-inline: 2rem;
+}
+
+/******** FOR THE HEADER ********/
+
+header{
+    border-bottom: 1px solid rgb(219, 229, 230);  
+    padding-block: 1rem;
+    
+}
+
+.logo{
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: var(--text-color);
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-left: 2rem;
+}
+.bluecolor{
+    color: rgb(62, 84, 163);
+}
+
+/******** FOR THE BODY ********/
+.filterbutton{
+ margin-top: 2rem;
+}
+select{
+    border: 1px solid rgb(219, 229, 230);  
+    padding: 0.7rem;
+    border-radius: 0.5rem;
+    margin-left: 0.2rem;
+}
+.productlist{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+ .productname{
+    color: rgb(62, 84, 163);
+    font-weight: 700;
+}
+.productlist__item{
+    padding: 2rem 1.5rem;
+    border: 1px solid rgb(219, 229, 230);  
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+/******** MEDIA QUERIES ********/
+@media (max-width:950px) {
+    .containers{
+        padding-inline: 1rem;
+    }
+    .logo{
+        padding-left: 1rem;
+    }
+    
+}
